@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maukah Kamu Menjadi Pacarku? 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjg0IDQuNjFhNS41IDUuNSAwIDAgMC03Ljc4IDBMMTIgNS42N2wtMS4wNi0xLjA2YTUuNSA1LjUgMCAwIDAtNy43OCAwIDUuNSA1LjUgMCAwIDAgMCA3Ljc4bDEuMDYgMS4wNkwxMiAyMS4yM2w3Ljc4LTcuNzggMS4wNi0xLjA2YTUuNSA1LjUgMCAwIDAgMC03Ljc4eiIgZmlsbD0iI2ZmNjk5NCIvPgo8L3N2Zz4K">
+</head>
+
+<body>
+    <!-- Background particles -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="card" id="mainCard">
+            <div class="heart-decoration">
+                <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 0 5.5 5.5 0 0 0 0 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+
+            <h1 class="main-title">Maukah kamu menjadi pacarku?</h1>
+
+            <div class="buttons-container" id="buttonsContainer">
+                <button class="btn btn-yes" id="yesBtn">
+                    <span>Yes</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 0 5.5 5.5 0 0 0 0 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+
+                <button class="btn btn-no" id="noBtn">
+                    <span>No</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.17 14.83L12 12l2.83 2.83a1 1 0 0 0 1.41-1.41L13.41 10.5l2.83-2.83a1 1 0 0 0-1.41-1.41L12 8.59 9.17 5.76a1 1 0 0 0-1.41 1.41l2.83 2.83-2.83 2.83a1 1 0 0 0 1.41 1.41z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="response-message" id="responseMessage"></div>
+        </div>
+
+        <!-- Music player -->
+        <div class="music-player">
+            <div class="music-info">
+                <span class="music-title">🎵 Jadi Kekasihku Saja - Keisya Levronka</span>
+                <button class="music-toggle" id="musicToggle">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5v14l11-7z" fill="currentColor" />
+                    </svg>
+                    <svg class="pause-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19h4V5H6v14zM14 5v14h4V5h-4z" fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+            <div class="youtube-player" id="youtubePlayer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
